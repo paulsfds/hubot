@@ -8,193 +8,138 @@
 7 verbose read json /Users/pawong/Downloads/hubot/package.json
 8 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot/package.json
 9 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-scripts/package.json
-10 verbose read json /Users/pawong/Downloads/hubot/node_modules/optparse/package.json
-11 verbose from cache /Users/pawong/Downloads/hubot/package.json
-12 verbose readDependencies using package.json deps
-13 verbose cache add [ 'node-stringprep', null ]
-14 silly cache add name=undefined spec="node-stringprep" args=["node-stringprep",null]
-15 verbose parsed url { pathname: 'node-stringprep',
-15 verbose parsed url   path: 'node-stringprep',
-15 verbose parsed url   href: 'node-stringprep' }
-16 silly lockFile d7e52d33-node-stringprep node-stringprep
-17 verbose lock node-stringprep /Users/pawong/.npm/d7e52d33-node-stringprep.lock
+10 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/package.json
+11 verbose read json /Users/pawong/Downloads/hubot/node_modules/npm-debug.log/package.json
+12 verbose read json /Users/pawong/Downloads/hubot/node_modules/optparse/package.json
+13 verbose from cache /Users/pawong/Downloads/hubot/package.json
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'node-stringprep', null ]
+16 silly cache add name=undefined spec="node-stringprep" args=["node-stringprep",null]
+17 verbose parsed url { pathname: 'node-stringprep',
+17 verbose parsed url   path: 'node-stringprep',
+17 verbose parsed url   href: 'node-stringprep' }
 18 silly lockFile d7e52d33-node-stringprep node-stringprep
-19 verbose addNamed [ 'node-stringprep', '' ]
-20 verbose addNamed [ null, '' ]
-21 silly lockFile c469c25e-node-stringprep node-stringprep@
-22 verbose lock node-stringprep@ /Users/pawong/.npm/c469c25e-node-stringprep.lock
-23 silly addNameRange { name: 'node-stringprep', range: '', hasData: false }
-24 verbose url raw node-stringprep
-25 verbose url resolving [ 'https://registry.npmjs.org/', './node-stringprep' ]
-26 verbose url resolved https://registry.npmjs.org/node-stringprep
-27 info retry registry request attempt 1 at 11:53:52
-28 http GET https://registry.npmjs.org/node-stringprep
-29 http 200 https://registry.npmjs.org/node-stringprep
-30 silly registry.get cb [ 200,
-30 silly registry.get   { vary: 'Accept',
-30 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-30 silly registry.get     etag: '"BOU8TJKWP2A999PK230UW0Y3R"',
-30 silly registry.get     date: 'Tue, 07 Aug 2012 18:53:53 GMT',
-30 silly registry.get     'content-type': 'application/json',
-30 silly registry.get     'content-length': '9149' } ]
-31 silly addNameRange number 2 { name: 'node-stringprep', range: '', hasData: true }
-32 silly addNameRange versions [ 'node-stringprep',
-32 silly addNameRange   [ '0.0.2',
-32 silly addNameRange     '0.0.3',
-32 silly addNameRange     '0.0.4',
-32 silly addNameRange     '0.0.5',
-32 silly addNameRange     '0.1.0',
-32 silly addNameRange     '0.1.1',
-32 silly addNameRange     '0.1.2',
-32 silly addNameRange     '0.1.3',
-32 silly addNameRange     '0.1.4' ] ]
-33 verbose addNamed [ 'node-stringprep', '0.1.4' ]
-34 verbose addNamed [ '0.1.4', '0.1.4' ]
-35 silly lockFile e5510cac-node-stringprep-0-1-4 node-stringprep@0.1.4
-36 verbose lock node-stringprep@0.1.4 /Users/pawong/.npm/e5510cac-node-stringprep-0-1-4.lock
-37 silly lockFile 8265f17e-ngprep-node-stringprep-0-1-4-tgz https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
-38 verbose lock https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz /Users/pawong/.npm/8265f17e-ngprep-node-stringprep-0-1-4-tgz.lock
-39 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz',
-39 verbose addRemoteTarball   '97ba8a789cefdbee10741e38839c943d527dbb3d' ]
-40 info retry fetch attempt 1 at 11:53:53
-41 verbose fetch to= /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/tmp.tgz
-42 http GET https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
-43 http 200 https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
-44 silly shasum updated bytes 4026
-45 info shasum 97ba8a789cefdbee10741e38839c943d527dbb3d
-45 info shasum /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/tmp.tgz
-46 verbose tar unpack /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/tmp.tgz
-47 silly lockFile f768bdaf-3340-0-09306448535062373-package /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package
-48 verbose lock /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package /Users/pawong/.npm/f768bdaf-3340-0-09306448535062373-package.lock
-49 silly gunzTarPerm modes [ '755', '644' ]
-50 silly gunzTarPerm extractEntry LICENSE
-51 silly gunzTarPerm extractEntry package.json
-52 silly gunzTarPerm extractEntry wscript
-53 silly gunzTarPerm extractEntry node-stringprep.cc
-54 silly gunzTarPerm extractEntry leakcheck.js
+19 verbose lock node-stringprep /Users/pawong/.npm/d7e52d33-node-stringprep.lock
+20 silly lockFile d7e52d33-node-stringprep node-stringprep
+21 verbose addNamed [ 'node-stringprep', '' ]
+22 verbose addNamed [ null, '' ]
+23 silly lockFile c469c25e-node-stringprep node-stringprep@
+24 verbose lock node-stringprep@ /Users/pawong/.npm/c469c25e-node-stringprep.lock
+25 silly addNameRange { name: 'node-stringprep', range: '', hasData: false }
+26 verbose url raw node-stringprep
+27 verbose url resolving [ 'https://registry.npmjs.org/', './node-stringprep' ]
+28 verbose url resolved https://registry.npmjs.org/node-stringprep
+29 info retry registry request attempt 1 at 13:17:50
+30 verbose etag "BOU8TJKWP2A999PK230UW0Y3R"
+31 http GET https://registry.npmjs.org/node-stringprep
+32 http 304 https://registry.npmjs.org/node-stringprep
+33 silly registry.get cb [ 304,
+33 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+33 silly registry.get     etag: '"BOU8TJKWP2A999PK230UW0Y3R"',
+33 silly registry.get     date: 'Tue, 07 Aug 2012 20:17:52 GMT',
+33 silly registry.get     'content-length': '0' } ]
+34 verbose etag node-stringprep from cache
+35 silly addNameRange number 2 { name: 'node-stringprep', range: '', hasData: true }
+36 silly addNameRange versions [ 'node-stringprep',
+36 silly addNameRange   [ '0.0.2',
+36 silly addNameRange     '0.0.3',
+36 silly addNameRange     '0.0.4',
+36 silly addNameRange     '0.0.5',
+36 silly addNameRange     '0.1.0',
+36 silly addNameRange     '0.1.1',
+36 silly addNameRange     '0.1.2',
+36 silly addNameRange     '0.1.3',
+36 silly addNameRange     '0.1.4' ] ]
+37 verbose addNamed [ 'node-stringprep', '0.1.4' ]
+38 verbose addNamed [ '0.1.4', '0.1.4' ]
+39 silly lockFile e5510cac-node-stringprep-0-1-4 node-stringprep@0.1.4
+40 verbose lock node-stringprep@0.1.4 /Users/pawong/.npm/e5510cac-node-stringprep-0-1-4.lock
+41 verbose read json /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
+42 silly lockFile e5510cac-node-stringprep-0-1-4 node-stringprep@0.1.4
+43 silly lockFile c469c25e-node-stringprep node-stringprep@
+44 silly resolved [ { name: 'node-stringprep',
+44 silly resolved     version: '0.1.4',
+44 silly resolved     main: './build/default/node-stringprep',
+44 silly resolved     description: 'ICU StringPrep profiles',
+44 silly resolved     keywords: [ 'unicode', 'stringprep', 'icu' ],
+44 silly resolved     scripts: { install: 'sh ./install.sh' },
+44 silly resolved     dependencies: {},
+44 silly resolved     devDependencies: {},
+44 silly resolved     repository:
+44 silly resolved      { type: 'git',
+44 silly resolved        path: 'git://github.com/astro/node-stringprep.git' },
+44 silly resolved     homepage: 'http://github.com/astro/node-stringprep',
+44 silly resolved     bugs: 'http://github.com/astro/node-stringprep/issues',
+44 silly resolved     author:
+44 silly resolved      { name: 'Astro',
+44 silly resolved        email: 'astro@spaceboyz.net',
+44 silly resolved        url: 'http://spaceboyz.net/~astro/' },
+44 silly resolved     licenses: [ [Object] ],
+44 silly resolved     engines: { node: '>=0.4' },
+44 silly resolved     readme: '# node-stringprep #\n\n[Flattr this!](https://flattr.com/thing/44598/node-stringprep)\n\n## Purpose ##\n\nExposes predefined Unicode normalization functions that are required by many protocols. This is just a binding to [ICU](http://icu-project.org/), which is [said to be fast.](http://ayena.de/node/74)\n\n## Installation ##\n\n    # Debian\n    apt-get install libicu-dev\n\n    # Gentoo\n    emerge icu\n\n    # OSX using MacPorts\n    port install icu +devel\n\n    # OSX using Homebrew\n    brew install icu4c\n    ln -s /usr/local/Cellar/icu4c/<VERSION>/bin/icu-config /usr/local/bin/icu-config\n\n    npm install node-stringprep\n\n## Usage ##\n\n    var StringPrep = require(\'node-stringprep\').StringPrep;\n    var prep = new StringPrep(\'nameprep\');\n    prep.prepare(\'Äffchen\')  // => \'äffchen\'\n\nFor a list of supported profiles, see [node-stringprep.cc](http://github.com/astro/node-stringprep/blob/master/node-stringprep.cc#L160)\n',
+44 silly resolved     _id: 'node-stringprep@0.1.4',
+44 silly resolved     _from: 'node-stringprep' } ]
+45 info install node-stringprep@0.1.4 into /Users/pawong/Downloads/hubot
+46 info installOne node-stringprep@0.1.4
+47 verbose from cache /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
+48 info /Users/pawong/Downloads/hubot/node_modules/node-stringprep unbuild
+49 verbose read json /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+50 verbose tar unpack /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+51 silly lockFile 562b79fc-bot-node-modules-node-stringprep /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+52 verbose lock /Users/pawong/Downloads/hubot/node_modules/node-stringprep /Users/pawong/.npm/562b79fc-bot-node-modules-node-stringprep.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
 55 silly gunzTarPerm extractEntry .npmignore
-56 silly gunzTarPerm extractEntry README.markdown
-57 silly gunzTarPerm extractEntry install.sh
-58 verbose read json /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package/package.json
-59 silly lockFile f768bdaf-3340-0-09306448535062373-package /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package
-60 verbose from cache /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package/package.json
-61 verbose tar pack [ '/Users/pawong/.npm/node-stringprep/0.1.4/package.tgz',
-61 verbose tar pack   '/var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package' ]
-62 verbose tarball /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
-63 verbose folder /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package
-64 silly lockFile 3d0feefa-ode-stringprep-0-1-4-package-tgz /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
-65 verbose lock /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz /Users/pawong/.npm/3d0feefa-ode-stringprep-0-1-4-package-tgz.lock
-66 silly lockFile 3d0feefa-ode-stringprep-0-1-4-package-tgz /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
-67 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
-68 verbose lock /Users/pawong/.npm/node-stringprep/0.1.4/package /Users/pawong/.npm/78bd3f6e-pm-node-stringprep-0-1-4-package.lock
-69 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
-70 verbose tar unpack /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
-71 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
-72 verbose lock /Users/pawong/.npm/node-stringprep/0.1.4/package /Users/pawong/.npm/78bd3f6e-pm-node-stringprep-0-1-4-package.lock
-73 silly gunzTarPerm modes [ '755', '644' ]
-74 silly gunzTarPerm extractEntry package.json
-75 silly gunzTarPerm extractEntry .npmignore
-76 silly gunzTarPerm extractEntry LICENSE
-77 silly gunzTarPerm extractEntry leakcheck.js
-78 silly gunzTarPerm extractEntry install.sh
-79 silly gunzTarPerm extractEntry node-stringprep.cc
-80 silly gunzTarPerm extractEntry README.markdown
-81 silly gunzTarPerm extractEntry wscript
-82 verbose read json /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
-83 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
-84 silly shasum updated bytes 4931
-85 info shasum 86a1ac27fd26a893d38e637e1cffb4e0bdbe1e4a
-85 info shasum /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
-86 verbose from cache /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
-87 verbose chmod /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz 644
-88 verbose chown /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz [ 796447854, 1542158550 ]
-89 silly lockFile 8265f17e-ngprep-node-stringprep-0-1-4-tgz https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
-90 silly lockFile e5510cac-node-stringprep-0-1-4 node-stringprep@0.1.4
-91 silly lockFile c469c25e-node-stringprep node-stringprep@
-92 silly resolved [ { name: 'node-stringprep',
-92 silly resolved     version: '0.1.4',
-92 silly resolved     main: './build/default/node-stringprep',
-92 silly resolved     description: 'ICU StringPrep profiles',
-92 silly resolved     keywords: [ 'unicode', 'stringprep', 'icu' ],
-92 silly resolved     scripts: { install: 'sh ./install.sh' },
-92 silly resolved     dependencies: {},
-92 silly resolved     devDependencies: {},
-92 silly resolved     repository:
-92 silly resolved      { type: 'git',
-92 silly resolved        path: 'git://github.com/astro/node-stringprep.git' },
-92 silly resolved     homepage: 'http://github.com/astro/node-stringprep',
-92 silly resolved     bugs: 'http://github.com/astro/node-stringprep/issues',
-92 silly resolved     author:
-92 silly resolved      { name: 'Astro',
-92 silly resolved        email: 'astro@spaceboyz.net',
-92 silly resolved        url: 'http://spaceboyz.net/~astro/' },
-92 silly resolved     licenses: [ [Object] ],
-92 silly resolved     engines: { node: '>=0.4' },
-92 silly resolved     readme: '# node-stringprep #\n\n[Flattr this!](https://flattr.com/thing/44598/node-stringprep)\n\n## Purpose ##\n\nExposes predefined Unicode normalization functions that are required by many protocols. This is just a binding to [ICU](http://icu-project.org/), which is [said to be fast.](http://ayena.de/node/74)\n\n## Installation ##\n\n    # Debian\n    apt-get install libicu-dev\n\n    # Gentoo\n    emerge icu\n\n    # OSX using MacPorts\n    port install icu +devel\n\n    # OSX using Homebrew\n    brew install icu4c\n    ln -s /usr/local/Cellar/icu4c/<VERSION>/bin/icu-config /usr/local/bin/icu-config\n\n    npm install node-stringprep\n\n## Usage ##\n\n    var StringPrep = require(\'node-stringprep\').StringPrep;\n    var prep = new StringPrep(\'nameprep\');\n    prep.prepare(\'Äffchen\')  // => \'äffchen\'\n\nFor a list of supported profiles, see [node-stringprep.cc](http://github.com/astro/node-stringprep/blob/master/node-stringprep.cc#L160)\n',
-92 silly resolved     _id: 'node-stringprep@0.1.4',
-92 silly resolved     dist: { shasum: '86a1ac27fd26a893d38e637e1cffb4e0bdbe1e4a' },
-92 silly resolved     _from: 'node-stringprep' } ]
-93 info install node-stringprep@0.1.4 into /Users/pawong/Downloads/hubot
-94 info installOne node-stringprep@0.1.4
-95 verbose from cache /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
-96 info /Users/pawong/Downloads/hubot/node_modules/node-stringprep unbuild
-97 verbose read json /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
-98 verbose tar unpack /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
-99 silly lockFile 562b79fc-bot-node-modules-node-stringprep /Users/pawong/Downloads/hubot/node_modules/node-stringprep
-100 verbose lock /Users/pawong/Downloads/hubot/node_modules/node-stringprep /Users/pawong/.npm/562b79fc-bot-node-modules-node-stringprep.lock
-101 silly gunzTarPerm modes [ '755', '644' ]
-102 silly gunzTarPerm extractEntry package.json
-103 silly gunzTarPerm extractEntry .npmignore
-104 silly gunzTarPerm extractEntry LICENSE
-105 silly gunzTarPerm extractEntry leakcheck.js
-106 silly gunzTarPerm extractEntry install.sh
-107 silly gunzTarPerm extractEntry node-stringprep.cc
-108 silly gunzTarPerm extractEntry README.markdown
-109 silly gunzTarPerm extractEntry wscript
-110 verbose read json /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
-111 silly lockFile 562b79fc-bot-node-modules-node-stringprep /Users/pawong/Downloads/hubot/node_modules/node-stringprep
-112 info preinstall node-stringprep@0.1.4
-113 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
-114 verbose readDependencies using package.json deps
-115 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
-116 verbose readDependencies using package.json deps
-117 silly resolved []
-118 verbose about to build /Users/pawong/Downloads/hubot/node_modules/node-stringprep
-119 info build /Users/pawong/Downloads/hubot/node_modules/node-stringprep
-120 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
-121 verbose linkStuff [ false,
-121 verbose linkStuff   false,
-121 verbose linkStuff   false,
-121 verbose linkStuff   '/Users/pawong/Downloads/hubot/node_modules' ]
-122 info linkStuff node-stringprep@0.1.4
-123 verbose linkBins node-stringprep@0.1.4
-124 verbose linkMans node-stringprep@0.1.4
-125 verbose rebuildBundles node-stringprep@0.1.4
-126 info install node-stringprep@0.1.4
-127 verbose unsafe-perm in lifecycle true
-128 silly exec sh "-c" "sh ./install.sh"
-129 silly sh,-c,sh ./install.sh,/Users/pawong/Downloads/hubot/node_modules/node-stringprep spawning
-130 info node-stringprep@0.1.4 Failed to exec install script
-131 info /Users/pawong/Downloads/hubot/node_modules/node-stringprep unbuild
-132 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
-133 info preuninstall node-stringprep@0.1.4
-134 info uninstall node-stringprep@0.1.4
-135 verbose true,/Users/pawong/Downloads/hubot/node_modules,/Users/pawong/Downloads/hubot/node_modules unbuild node-stringprep@0.1.4
-136 info postuninstall node-stringprep@0.1.4
-137 error node-stringprep@0.1.4 install: `sh ./install.sh`
-137 error `sh "-c" "sh ./install.sh"` failed with 1
-138 error Failed at the node-stringprep@0.1.4 install script.
-138 error This is most likely a problem with the node-stringprep package,
-138 error not with npm itself.
-138 error Tell the author that this fails on your system:
-138 error     sh ./install.sh
-138 error You can get their info via:
-138 error     npm owner ls node-stringprep
-138 error There is likely additional logging output above.
-139 error System Darwin 11.4.2
-140 error command "node" "/usr/local/bin/npm" "install" "node-stringprep"
-141 error cwd /Users/pawong/Downloads/hubot
-142 error node -v v0.8.5
-143 error npm -v 1.1.46
-144 error code ELIFECYCLE
-145 verbose exit [ 1, true ]
+56 silly gunzTarPerm extractEntry LICENSE
+57 silly gunzTarPerm extractEntry leakcheck.js
+58 silly gunzTarPerm extractEntry install.sh
+59 silly gunzTarPerm extractEntry node-stringprep.cc
+60 silly gunzTarPerm extractEntry README.markdown
+61 silly gunzTarPerm extractEntry wscript
+62 verbose read json /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+63 silly lockFile 562b79fc-bot-node-modules-node-stringprep /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+64 info preinstall node-stringprep@0.1.4
+65 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+66 verbose readDependencies using package.json deps
+67 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+68 verbose readDependencies using package.json deps
+69 silly resolved []
+70 verbose about to build /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+71 info build /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+72 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+73 verbose linkStuff [ false,
+73 verbose linkStuff   false,
+73 verbose linkStuff   false,
+73 verbose linkStuff   '/Users/pawong/Downloads/hubot/node_modules' ]
+74 info linkStuff node-stringprep@0.1.4
+75 verbose linkBins node-stringprep@0.1.4
+76 verbose linkMans node-stringprep@0.1.4
+77 verbose rebuildBundles node-stringprep@0.1.4
+78 info install node-stringprep@0.1.4
+79 verbose unsafe-perm in lifecycle true
+80 silly exec sh "-c" "sh ./install.sh"
+81 silly sh,-c,sh ./install.sh,/Users/pawong/Downloads/hubot/node_modules/node-stringprep spawning
+82 info node-stringprep@0.1.4 Failed to exec install script
+83 info /Users/pawong/Downloads/hubot/node_modules/node-stringprep unbuild
+84 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+85 info preuninstall node-stringprep@0.1.4
+86 info uninstall node-stringprep@0.1.4
+87 verbose true,/Users/pawong/Downloads/hubot/node_modules,/Users/pawong/Downloads/hubot/node_modules unbuild node-stringprep@0.1.4
+88 info postuninstall node-stringprep@0.1.4
+89 error node-stringprep@0.1.4 install: `sh ./install.sh`
+89 error `sh "-c" "sh ./install.sh"` failed with 1
+90 error Failed at the node-stringprep@0.1.4 install script.
+90 error This is most likely a problem with the node-stringprep package,
+90 error not with npm itself.
+90 error Tell the author that this fails on your system:
+90 error     sh ./install.sh
+90 error You can get their info via:
+90 error     npm owner ls node-stringprep
+90 error There is likely additional logging output above.
+91 error System Darwin 11.4.2
+92 error command "node" "/usr/local/bin/npm" "install" "node-stringprep"
+93 error cwd /Users/pawong/Downloads/hubot
+94 error node -v v0.8.5
+95 error npm -v 1.1.46
+96 error code ELIFECYCLE
+97 verbose exit [ 1, true ]
