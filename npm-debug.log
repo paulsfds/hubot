@@ -1,651 +1,200 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'node-stringprep' ]
 2 info using npm@1.1.46
 3 info using node@v0.8.5
 4 verbose config file /Users/pawong/.npmrc
 5 verbose config file /usr/local/etc/npmrc
 6 verbose config file /usr/local/lib/node_modules/npm/npmrc
 7 verbose read json /Users/pawong/Downloads/hubot/package.json
-8 verbose readDependencies using package.json deps
-9 verbose install where, deps [ '/Users/pawong/Downloads/hubot',
-9 verbose install   [ 'hubot', 'hubot-scripts', 'optparse', 'hubot-xmpp' ] ]
-10 verbose from cache /Users/pawong/Downloads/hubot/package.json
-11 info preinstall hosted-hubot@2.3.2
-12 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot/package.json
-13 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-scripts/package.json
-14 verbose read json /Users/pawong/Downloads/hubot/node_modules/optparse/package.json
-15 verbose from cache /Users/pawong/Downloads/hubot/package.json
-16 verbose readDependencies using package.json deps
-17 verbose read json /Users/pawong/Downloads/hubot/node_modules/.bin/package.json
-18 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot/package.json
-19 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-scripts/package.json
-20 verbose from cache /Users/pawong/Downloads/hubot/node_modules/optparse/package.json
-21 verbose already installed skipping hubot@2.3.2 /Users/pawong/Downloads/hubot
-22 verbose already installed skipping hubot-scripts@>= 2.1.0 /Users/pawong/Downloads/hubot
-23 verbose already installed skipping optparse@1.0.3 /Users/pawong/Downloads/hubot
-24 verbose cache add [ 'hubot-xmpp@0.1.0', null ]
-25 silly cache add name=undefined spec="hubot-xmpp@0.1.0" args=["hubot-xmpp@0.1.0",null]
-26 verbose parsed url { pathname: 'hubot-xmpp@0.1.0',
-26 verbose parsed url   path: 'hubot-xmpp@0.1.0',
-26 verbose parsed url   href: 'hubot-xmpp@0.1.0' }
-27 silly cache add name="hubot-xmpp" spec="0.1.0" args=["hubot-xmpp","0.1.0"]
-28 verbose parsed url { pathname: '0.1.0', path: '0.1.0', href: '0.1.0' }
-29 verbose addNamed [ 'hubot-xmpp', '0.1.0' ]
-30 verbose addNamed [ '0.1.0', '0.1.0' ]
-31 silly lockFile 92953cbd-hubot-xmpp-0-1-0 hubot-xmpp@0.1.0
-32 verbose lock hubot-xmpp@0.1.0 /Users/pawong/.npm/92953cbd-hubot-xmpp-0-1-0.lock
-33 verbose url raw hubot-xmpp/0.1.0
-34 verbose url resolving [ 'https://registry.npmjs.org/', './hubot-xmpp/0.1.0' ]
-35 verbose url resolved https://registry.npmjs.org/hubot-xmpp/0.1.0
-36 info retry registry request attempt 1 at 11:51:53
-37 verbose etag "A7FYODGUEPZUQBL607L8PYNE8"
-38 http GET https://registry.npmjs.org/hubot-xmpp/0.1.0
-39 http 304 https://registry.npmjs.org/hubot-xmpp/0.1.0
-40 silly registry.get cb [ 304,
-40 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-40 silly registry.get     etag: '"A7FYODGUEPZUQBL607L8PYNE8"',
-40 silly registry.get     date: 'Tue, 07 Aug 2012 18:51:55 GMT',
-40 silly registry.get     'content-length': '0' } ]
-41 verbose etag hubot-xmpp/0.1.0 from cache
-42 verbose read json /Users/pawong/.npm/hubot-xmpp/0.1.0/package/package.json
-43 silly lockFile 92953cbd-hubot-xmpp-0-1-0 hubot-xmpp@0.1.0
-44 silly resolved [ { name: 'hubot-xmpp',
-44 silly resolved     version: '0.1.0',
-44 silly resolved     author:
-44 silly resolved      { name: 'Mark Story',
-44 silly resolved        email: 'mark@mark-story.com',
-44 silly resolved        url: 'http://mark-story.com' },
-44 silly resolved     description: 'XMPP adapter for Hubot.',
-44 silly resolved     keywords: 'hubot xmpp adapter',
-44 silly resolved     licenses: [ [Object] ],
-44 silly resolved     repository:
-44 silly resolved      { type: 'git',
-44 silly resolved        url: 'git://github.com/markstory/hubot-xmpp.git' },
-44 silly resolved     bugs: { url: 'http://github.com/markstory/hubot-xmpp/issues' },
-44 silly resolved     scripts: { test: 'mocha test/*' },
-44 silly resolved     main: './src/xmpp.coffee',
-44 silly resolved     engine: 'node > 0.6.0 < 0.8.0',
-44 silly resolved     dependencies: { 'node-xmpp': '0.3.2' },
-44 silly resolved     devDependencies: { 'coffee-script': '1.1.3', mocha: '0.2.0', hubot: '>=2.3.0' },
-44 silly resolved     readme: '## Hubot XMPP\n\nConnects Hubot to your XMPP network \n\n### Setup\n\nInstall dependencies with `npm`\n\n\tnpm install\n\n### Configuration\n\nThere are a few configuration values you can use when getting hubot-xmpp\nrunning. The XMPP adapter requires only 3 (5 if you need specify server\nand port) environment variables to be set to able to use it.\n\n* `HUBOT_XMPP_USERNAME`\n* `HUBOT_XMPP_PASSWORD`\n* `HUBOT_XMPP_ROOMS`\n\nOptional:\n\n* `HUBOT_XMPP_HOST`\n* `HUBOT_XMPP_PORT`\n\n`HUBOT_XMPP_ROOMS` can be a comma separated list of rooms to join.  If\nyour rooms require passwords you should use the `jid:password` syntax.\nRoom passwords cannot contain `,`.\n\n### Installation\n\nAfter installing `hubot` with npm, you should create a standalone bot:\n\n\thubot -c ./my-bot\n\nAfter creating your new bot, you should modify the `package.json` and add the\n`hubot-xmpp` dependency. After running `npm install` you should be ready to configure\nand start up your bot.\n',
-44 silly resolved     _id: 'hubot-xmpp@0.1.0',
-44 silly resolved     _from: 'hubot-xmpp@0.1.0' } ]
-45 info install hubot-xmpp@0.1.0 into /Users/pawong/Downloads/hubot
-46 info installOne hubot-xmpp@0.1.0
-47 verbose from cache /Users/pawong/.npm/hubot-xmpp/0.1.0/package/package.json
-48 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp unbuild
-49 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/package.json
-50 verbose tar unpack /Users/pawong/.npm/hubot-xmpp/0.1.0/package.tgz
-51 silly lockFile 9f749028-ds-hubot-node-modules-hubot-xmpp /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp
-52 verbose lock /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp /Users/pawong/.npm/9f749028-ds-hubot-node-modules-hubot-xmpp.lock
-53 silly gunzTarPerm modes [ '755', '644' ]
-54 silly gunzTarPerm extractEntry package.json
+8 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot/package.json
+9 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-scripts/package.json
+10 verbose read json /Users/pawong/Downloads/hubot/node_modules/optparse/package.json
+11 verbose from cache /Users/pawong/Downloads/hubot/package.json
+12 verbose readDependencies using package.json deps
+13 verbose cache add [ 'node-stringprep', null ]
+14 silly cache add name=undefined spec="node-stringprep" args=["node-stringprep",null]
+15 verbose parsed url { pathname: 'node-stringprep',
+15 verbose parsed url   path: 'node-stringprep',
+15 verbose parsed url   href: 'node-stringprep' }
+16 silly lockFile d7e52d33-node-stringprep node-stringprep
+17 verbose lock node-stringprep /Users/pawong/.npm/d7e52d33-node-stringprep.lock
+18 silly lockFile d7e52d33-node-stringprep node-stringprep
+19 verbose addNamed [ 'node-stringprep', '' ]
+20 verbose addNamed [ null, '' ]
+21 silly lockFile c469c25e-node-stringprep node-stringprep@
+22 verbose lock node-stringprep@ /Users/pawong/.npm/c469c25e-node-stringprep.lock
+23 silly addNameRange { name: 'node-stringprep', range: '', hasData: false }
+24 verbose url raw node-stringprep
+25 verbose url resolving [ 'https://registry.npmjs.org/', './node-stringprep' ]
+26 verbose url resolved https://registry.npmjs.org/node-stringprep
+27 info retry registry request attempt 1 at 11:53:52
+28 http GET https://registry.npmjs.org/node-stringprep
+29 http 200 https://registry.npmjs.org/node-stringprep
+30 silly registry.get cb [ 200,
+30 silly registry.get   { vary: 'Accept',
+30 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+30 silly registry.get     etag: '"BOU8TJKWP2A999PK230UW0Y3R"',
+30 silly registry.get     date: 'Tue, 07 Aug 2012 18:53:53 GMT',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     'content-length': '9149' } ]
+31 silly addNameRange number 2 { name: 'node-stringprep', range: '', hasData: true }
+32 silly addNameRange versions [ 'node-stringprep',
+32 silly addNameRange   [ '0.0.2',
+32 silly addNameRange     '0.0.3',
+32 silly addNameRange     '0.0.4',
+32 silly addNameRange     '0.0.5',
+32 silly addNameRange     '0.1.0',
+32 silly addNameRange     '0.1.1',
+32 silly addNameRange     '0.1.2',
+32 silly addNameRange     '0.1.3',
+32 silly addNameRange     '0.1.4' ] ]
+33 verbose addNamed [ 'node-stringprep', '0.1.4' ]
+34 verbose addNamed [ '0.1.4', '0.1.4' ]
+35 silly lockFile e5510cac-node-stringprep-0-1-4 node-stringprep@0.1.4
+36 verbose lock node-stringprep@0.1.4 /Users/pawong/.npm/e5510cac-node-stringprep-0-1-4.lock
+37 silly lockFile 8265f17e-ngprep-node-stringprep-0-1-4-tgz https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
+38 verbose lock https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz /Users/pawong/.npm/8265f17e-ngprep-node-stringprep-0-1-4-tgz.lock
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz',
+39 verbose addRemoteTarball   '97ba8a789cefdbee10741e38839c943d527dbb3d' ]
+40 info retry fetch attempt 1 at 11:53:53
+41 verbose fetch to= /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/tmp.tgz
+42 http GET https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
+43 http 200 https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
+44 silly shasum updated bytes 4026
+45 info shasum 97ba8a789cefdbee10741e38839c943d527dbb3d
+45 info shasum /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/tmp.tgz
+46 verbose tar unpack /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/tmp.tgz
+47 silly lockFile f768bdaf-3340-0-09306448535062373-package /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package
+48 verbose lock /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package /Users/pawong/.npm/f768bdaf-3340-0-09306448535062373-package.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry LICENSE
+51 silly gunzTarPerm extractEntry package.json
+52 silly gunzTarPerm extractEntry wscript
+53 silly gunzTarPerm extractEntry node-stringprep.cc
+54 silly gunzTarPerm extractEntry leakcheck.js
 55 silly gunzTarPerm extractEntry .npmignore
-56 silly gunzTarPerm extractEntry Makefile
-57 silly gunzTarPerm extractEntry README.mdown
-58 silly gunzTarPerm extractEntry src/xmpp.coffee
-59 silly gunzTarPerm extractEntry test/adapter-test.coffee
-60 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/package.json
-61 silly lockFile 9f749028-ds-hubot-node-modules-hubot-xmpp /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp
-62 info preinstall hubot-xmpp@0.1.0
-63 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/package.json
-64 verbose readDependencies using package.json deps
-65 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/package.json
-66 verbose readDependencies using package.json deps
-67 verbose cache add [ 'node-xmpp@0.3.2', null ]
-68 silly cache add name=undefined spec="node-xmpp@0.3.2" args=["node-xmpp@0.3.2",null]
-69 verbose parsed url { pathname: 'node-xmpp@0.3.2',
-69 verbose parsed url   path: 'node-xmpp@0.3.2',
-69 verbose parsed url   href: 'node-xmpp@0.3.2' }
-70 silly cache add name="node-xmpp" spec="0.3.2" args=["node-xmpp","0.3.2"]
-71 verbose parsed url { pathname: '0.3.2', path: '0.3.2', href: '0.3.2' }
-72 verbose addNamed [ 'node-xmpp', '0.3.2' ]
-73 verbose addNamed [ '0.3.2', '0.3.2' ]
-74 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
-75 verbose lock node-xmpp@0.3.2 /Users/pawong/.npm/cc36b151-node-xmpp-0-3-2.lock
-76 verbose url raw node-xmpp/0.3.2
-77 verbose url resolving [ 'https://registry.npmjs.org/', './node-xmpp/0.3.2' ]
-78 verbose url resolved https://registry.npmjs.org/node-xmpp/0.3.2
-79 info retry registry request attempt 1 at 11:51:55
-80 verbose etag "D8RTTUJDPC8AX5RXTWRLXNF6R"
-81 http GET https://registry.npmjs.org/node-xmpp/0.3.2
-82 http 304 https://registry.npmjs.org/node-xmpp/0.3.2
-83 silly registry.get cb [ 304,
-83 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-83 silly registry.get     etag: '"D8RTTUJDPC8AX5RXTWRLXNF6R"',
-83 silly registry.get     date: 'Tue, 07 Aug 2012 18:51:56 GMT',
-83 silly registry.get     'content-length': '0' } ]
-84 verbose etag node-xmpp/0.3.2 from cache
-85 verbose read json /Users/pawong/.npm/node-xmpp/0.3.2/package/package.json
-86 silly lockFile cc36b151-node-xmpp-0-3-2 node-xmpp@0.3.2
-87 silly resolved [ { name: 'node-xmpp',
-87 silly resolved     version: '0.3.2',
-87 silly resolved     main: './lib/node-xmpp',
-87 silly resolved     description: 'Idiomatic XMPP client, component & server library for node.js',
-87 silly resolved     author: { name: 'Stephan Maka' },
-87 silly resolved     dependencies: { 'node-expat': '>=1.4.1', ltx: '>= 0.1.1' },
-87 silly resolved     devDependencies: { 'node-stringprep': '>=0.1.0', vows: '>=0.5.12' },
-87 silly resolved     repositories: [ [Object] ],
-87 silly resolved     homepage: 'http://github.com/astro/node-xmpp',
-87 silly resolved     bugs: 'http://github.com/astro/node-xmpp/issues',
-87 silly resolved     maintainers: [ [Object] ],
-87 silly resolved     contributors:
-87 silly resolved      [ [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object],
-87 silly resolved        [Object] ],
-87 silly resolved     licenses: [ [Object] ],
-87 silly resolved     engine: 'node >=0.4.0',
-87 silly resolved     scripts: { test: 'vows --spec' },
-87 silly resolved     readme: '# node-xmpp\n\nidiomatic XMPP library for [node.js](http://nodejs.org/)\n\n\n## Installation\n\nWith package manager [npm](http://npmjs.org/):\n\n    npm install node-xmpp\n\n\n## Objectives of *node-xmpp:*\n\n* Use node.js conventions, especially `EventEmitter`, ie. for write\n  buffer control\n* Fast parsing, `node-expat` was written for this library\n* Client support for both XMPP clients and components\n* Optional server infrastructure with `Router`\n* After authentication, leave trivial protocol bits to the user, that\n  is XML handling according to any\n  [XEP](http://xmpp.org/xmpp-protocols/xmpp-extensions/)\n\n\n## Features\n\n* Client authentication with SASL DIGEST-MD5, PLAIN, ANONYMOUS, X-FACEBOOK-PLATFORM\n* `_xmpp-client._tcp` SRV record support\n* Simple JID parsing with Stringprep normalization\n  * Optional now, you won\'t need ICU for just node-xmpp\n  * Please be aware if you identify users by JIDs\n  * `npm install node-stringprep`\n* Uses [ltx](http://github.com/astro/ltx)\n  * Much easier to handle than a standard DOM\n  * xmlns-aware\n  * Easy XML builder like Strophe.js (see down)\n  * Non-buffering serialization\n  * Was split out of node-xmpp for modularization and resuability\n* [Component](http://xmpp.org/extensions/xep-0114.html) connections\n* Run your own server/talk to other servers with `xmpp.Router`\n\n\n## Dependencies\n\n* [node-expat](http://github.com/astro/node-expat)\n* [ltx](http://github.com/astro/ltx)\n\nOptional\n\n* [node-stringprep](http://github.com/astro/node-stringprep): for [icu](http://icu-project.org/)-based string normalization.\n\n\n## Related Libraries\n\n* [node-xmpp-bosh](http://code.google.com/p/node-xmpp-bosh/): BOSH & websocket server (connection manager)\n* [node-xmpp-via-bosh](https://github.com/anoopc/node-xmpp-via-bosh/): BOSH client connections from node.js\n* [node-simple-xmpp](https://github.com/arunoda/node-simple-xmpp/): Simpler high-level client layer\n* [xmpp-server](https://github.com/superfeedr/xmpp-server/): Reusable XMPP server on top of node-xmpp\n\n\n## Design\n\nInheritance tree and associations:\n\n    ┌────────────┐1     1┌────────────┐\n    │ net.Stream ├───────┤ Connection │\n    └────────────┘       └────────────┘\n                               ↑\n          ┌────────────┬───────┴───┬────────────┐\n          │            │           │            │\n    ┏━━━━━┷━━━━┓ ┏━━━━━┷━━━━━┓ ┌───┴────┐ ┌─────┴─────┐\n    ┃  Client  ┃ ┃ Component ┃ │ Server │ │ C2SStream │\n    ┗━━━━━━━━━━┛ ┗━━━━━━━━━━━┛ └────────┘ └───────────┘\n                                   ↑            ↑0..*\n             ┌─────────────────────┤            │accepts\n             │                     │            │1\n    ┌────────┴───────┐ ┌───────────┴────┐ ┏━━━━━┷━━━━━┓\n    │ OutgoingServer │ │ IncomingServer │ ┃ C2SServer ┃\n    └─────────────┬──┘ └───┬────────────┘ ┗━━━━━┯━━━━━┛\n             0..* │        │ 0..*               │\n          creates │        │ accepts            │\n                 ┏┷━━━━━━━━┷┓                   │\n                 ┃  Router  ┃←──────────────────┘\n                 ┗━━━━━━━━━━┛ 1\n\n\nThis foundation is complemented by two basic data structures:\n\n* *JID:* a Jabber-Id, represented as a triple of `user`, `domain`,\n   `resource`\n* *Element:* any XML Element\n\n\n### Building XML Elements\n\nStrophe.js\' XML Builder is very convenient for producing XMPP\nstanzas. ltx includes it in a much more primitive way: the\n`c()`, `cnode()` and `t()` methods can be called on any *Element*\nobject, returning the new child element.\n\nThis can be confusing: in the end, you will hold the last-added child\nuntil you use `up()`, a getter for the parent. `Connection.send()`\nfirst invokes `tree()` to retrieve the uppermost parent, the XMPP\nstanza, before sending it out the wire.\n\n\n## TODO\n\n* More documentation\n* More tests (Using [Vows](http://vowsjs.org/))\n',
-87 silly resolved     _id: 'node-xmpp@0.3.2',
-87 silly resolved     _from: 'node-xmpp@0.3.2' } ]
-88 info install node-xmpp@0.3.2 into /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp
-89 info installOne node-xmpp@0.3.2
-90 verbose from cache /Users/pawong/.npm/node-xmpp/0.3.2/package/package.json
-91 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp unbuild
-92 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/package.json
-93 verbose tar unpack /Users/pawong/.npm/node-xmpp/0.3.2/package.tgz
-94 silly lockFile e59dca18-ubot-xmpp-node-modules-node-xmpp /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp
-95 verbose lock /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp /Users/pawong/.npm/e59dca18-ubot-xmpp-node-modules-node-xmpp.lock
-96 silly gunzTarPerm modes [ '755', '644' ]
-97 silly gunzTarPerm extractEntry package.json
-98 silly gunzTarPerm extractEntry .npmignore
-99 silly gunzTarPerm extractEntry LICENSE
-100 silly gunzTarPerm extractEntry .travis.yml
-101 silly gunzTarPerm extractEntry examples/c2s.js
-102 silly gunzTarPerm extractEntry examples/debug_c2s.js
-103 silly gunzTarPerm extractEntry examples/echo_bot.js
-104 silly gunzTarPerm extractEntry examples/echo_component.js
-105 silly gunzTarPerm extractEntry examples/echo_mixin.js
-106 silly gunzTarPerm extractEntry examples/echo_server.js
-107 silly gunzTarPerm extractEntry examples/probe_server.js
-108 silly gunzTarPerm extractEntry examples/send_message.js
-109 silly gunzTarPerm extractEntry examples/send_message_component.js
-110 silly gunzTarPerm extractEntry lib/idle_timeout.js
-111 silly gunzTarPerm extractEntry lib/node-xmpp.js
-112 silly gunzTarPerm extractEntry lib/starttls.js
-113 silly gunzTarPerm extractEntry lib/stream_shaper.js
-114 silly gunzTarPerm extractEntry lib/xmpp.js
-115 silly gunzTarPerm extractEntry lib/xmpp/c2s.js
-116 silly gunzTarPerm extractEntry lib/xmpp/component.js
-117 silly gunzTarPerm extractEntry lib/xmpp/connection.js
-118 silly gunzTarPerm extractEntry lib/xmpp/jid.js
-119 silly gunzTarPerm extractEntry lib/xmpp/client.js
-120 silly gunzTarPerm extractEntry lib/xmpp/sasl.js
-121 silly gunzTarPerm extractEntry lib/xmpp/server.js
-122 silly gunzTarPerm extractEntry lib/xmpp/srv.js
-123 silly gunzTarPerm extractEntry lib/xmpp/stanza.js
-124 silly gunzTarPerm extractEntry lib/xmpp/stream_parser.js
-125 silly gunzTarPerm extractEntry lib/xmpp/router.js
-126 silly gunzTarPerm extractEntry README.markdown
-127 silly gunzTarPerm extractEntry test/jid-test.js
-128 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/package.json
-129 silly lockFile e59dca18-ubot-xmpp-node-modules-node-xmpp /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp
-130 info preinstall node-xmpp@0.3.2
-131 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/package.json
-132 verbose readDependencies using package.json deps
-133 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/package.json
-134 verbose readDependencies using package.json deps
-135 verbose cache add [ 'node-expat@>=1.4.1', null ]
-136 silly cache add name=undefined spec="node-expat@>=1.4.1" args=["node-expat@>=1.4.1",null]
-137 verbose parsed url { pathname: 'node-expat@%3E=1.4.1',
-137 verbose parsed url   path: 'node-expat@%3E=1.4.1',
-137 verbose parsed url   href: 'node-expat@%3E=1.4.1' }
-138 silly cache add name="node-expat" spec=">=1.4.1" args=["node-expat",">=1.4.1"]
-139 verbose parsed url { pathname: '%3E=1.4.1', path: '%3E=1.4.1', href: '%3E=1.4.1' }
-140 verbose addNamed [ 'node-expat', '>=1.4.1' ]
-141 verbose addNamed [ null, '>=1.4.1' ]
-142 silly lockFile 17e439b5-node-expat-1-4-1 node-expat@>=1.4.1
-143 verbose lock node-expat@>=1.4.1 /Users/pawong/.npm/17e439b5-node-expat-1-4-1.lock
-144 verbose cache add [ 'ltx@>= 0.1.1', null ]
-145 silly cache add name=undefined spec="ltx@>= 0.1.1" args=["ltx@>= 0.1.1",null]
-146 verbose parsed url { pathname: 'ltx@%3E=%200.1.1',
-146 verbose parsed url   path: 'ltx@%3E=%200.1.1',
-146 verbose parsed url   href: 'ltx@%3E=%200.1.1' }
-147 silly cache add name="ltx" spec=">= 0.1.1" args=["ltx",">= 0.1.1"]
-148 verbose parsed url { pathname: '%3E=%200.1.1',
-148 verbose parsed url   path: '%3E=%200.1.1',
-148 verbose parsed url   href: '%3E=%200.1.1' }
-149 verbose addNamed [ 'ltx', '>= 0.1.1' ]
-150 verbose addNamed [ null, '>=0.1.1' ]
-151 silly lockFile 139f7194-ltx-0-1-1 ltx@>= 0.1.1
-152 verbose lock ltx@>= 0.1.1 /Users/pawong/.npm/139f7194-ltx-0-1-1.lock
-153 silly addNameRange { name: 'node-expat', range: '>=1.4.1', hasData: false }
-154 silly addNameRange { name: 'ltx', range: '>=0.1.1', hasData: false }
-155 verbose url raw ltx
-156 verbose url resolving [ 'https://registry.npmjs.org/', './ltx' ]
-157 verbose url resolved https://registry.npmjs.org/ltx
-158 info retry registry request attempt 1 at 11:51:56
-159 verbose etag "3PORS9F5IJ0RK2KSHVEUIEE5Q"
-160 http GET https://registry.npmjs.org/ltx
-161 verbose url raw node-expat
-162 verbose url resolving [ 'https://registry.npmjs.org/', './node-expat' ]
-163 verbose url resolved https://registry.npmjs.org/node-expat
-164 info retry registry request attempt 1 at 11:51:56
-165 verbose etag "8UK1RAX33TF8TT70T338BMTY"
-166 http GET https://registry.npmjs.org/node-expat
-167 http 304 https://registry.npmjs.org/ltx
-168 silly registry.get cb [ 304,
-168 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-168 silly registry.get     etag: '"3PORS9F5IJ0RK2KSHVEUIEE5Q"',
-168 silly registry.get     date: 'Tue, 07 Aug 2012 18:51:56 GMT',
-168 silly registry.get     'content-length': '0' } ]
-169 verbose etag ltx from cache
-170 silly addNameRange number 2 { name: 'ltx', range: '>=0.1.1', hasData: true }
-171 silly addNameRange versions [ 'ltx',
-171 silly addNameRange   [ '0.0.1',
-171 silly addNameRange     '0.0.3',
-171 silly addNameRange     '0.0.4',
-171 silly addNameRange     '0.0.5',
-171 silly addNameRange     '0.1.0',
-171 silly addNameRange     '0.1.1',
-171 silly addNameRange     '0.1.2',
-171 silly addNameRange     '0.1.3',
-171 silly addNameRange     '0.2.0',
-171 silly addNameRange     '0.2.1' ] ]
-172 verbose addNamed [ 'ltx', '0.2.1' ]
-173 verbose addNamed [ '0.2.1', '0.2.1' ]
-174 silly lockFile 96350f62-ltx-0-2-1 ltx@0.2.1
-175 verbose lock ltx@0.2.1 /Users/pawong/.npm/96350f62-ltx-0-2-1.lock
-176 verbose read json /Users/pawong/.npm/ltx/0.2.1/package/package.json
-177 http 304 https://registry.npmjs.org/node-expat
-178 silly registry.get cb [ 304,
-178 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-178 silly registry.get     etag: '"8UK1RAX33TF8TT70T338BMTY"',
-178 silly registry.get     date: 'Tue, 07 Aug 2012 18:51:56 GMT',
-178 silly registry.get     'content-length': '0' } ]
-179 verbose etag node-expat from cache
-180 silly addNameRange number 2 { name: 'node-expat', range: '>=1.4.1', hasData: true }
-181 silly addNameRange versions [ 'node-expat',
-181 silly addNameRange   [ '0.0.4',
-181 silly addNameRange     '0.0.5',
-181 silly addNameRange     '0.0.6',
-181 silly addNameRange     '1.0.0',
-181 silly addNameRange     '1.0.1',
-181 silly addNameRange     '1.1.0',
-181 silly addNameRange     '1.1.1',
-181 silly addNameRange     '1.2.0',
-181 silly addNameRange     '1.3.0',
-181 silly addNameRange     '1.3.1',
-181 silly addNameRange     '1.3.2',
-181 silly addNameRange     '1.4.0',
-181 silly addNameRange     '1.4.1',
-181 silly addNameRange     '1.4.2',
-181 silly addNameRange     '1.4.3',
-181 silly addNameRange     '1.4.4',
-181 silly addNameRange     '1.4.5',
-181 silly addNameRange     '1.5.0',
-181 silly addNameRange     '1.6.0' ] ]
-182 verbose addNamed [ 'node-expat', '1.6.0' ]
-183 verbose addNamed [ '1.6.0', '1.6.0' ]
-184 silly lockFile b50fce82-node-expat-1-6-0 node-expat@1.6.0
-185 verbose lock node-expat@1.6.0 /Users/pawong/.npm/b50fce82-node-expat-1-6-0.lock
-186 verbose read json /Users/pawong/.npm/node-expat/1.6.0/package/package.json
-187 silly lockFile 96350f62-ltx-0-2-1 ltx@0.2.1
-188 silly lockFile 139f7194-ltx-0-1-1 ltx@>= 0.1.1
-189 silly lockFile b50fce82-node-expat-1-6-0 node-expat@1.6.0
-190 silly lockFile 17e439b5-node-expat-1-4-1 node-expat@>=1.4.1
-191 silly resolved [ { name: 'ltx',
-191 silly resolved     version: '0.2.1',
-191 silly resolved     main: './lib/index',
-191 silly resolved     browserify: './lib/index-browserify.js',
-191 silly resolved     description: '<xml for="node.js" browserify="too">',
-191 silly resolved     author: { name: 'Astro' },
-191 silly resolved     dependencies: { 'node-expat': '>=1.2.0', sax: '>=0.3.5' },
-191 silly resolved     repositories: [ [Object] ],
-191 silly resolved     homepage: 'http://github.com/astro/ltx',
-191 silly resolved     bugs: 'http://github.com/astro/ltx/issues',
-191 silly resolved     maintainers: [ [Object] ],
-191 silly resolved     contributors: [ [Object], [Object], [Object] ],
-191 silly resolved     licenses: [ [Object] ],
-191 silly resolved     engine: 'node',
-191 silly resolved     devDependencies:
-191 silly resolved      { vows: '>=0.5.12',
-191 silly resolved        easysax: '>=0.1.7',
-191 silly resolved        'node-xml': '>=1.0.1',
-191 silly resolved        'Strophe.js': 'https://github.com/metajack/strophejs/tarball/master',
-191 silly resolved        'request-animation-frame': '>=0.1.0',
-191 silly resolved        browserify: '>=1.10.4' },
-191 silly resolved     scripts: { test: 'vows --spec' },
-191 silly resolved     readme: '# Less-Than XML\n\n* *Element:* any XML Element\n* Text nodes are Strings\n* Runs on node.js and browserify\n\n\n## Parsing\n\n### DOM\n\nParse a little document at once:\n\n    el = ltx.parse("<document/>")\n\nPush parser:\n\n\tp = new ltx.Parser();\n\tp.on(\'tree\', function(tree) {\n\t\tproceed(null, tree);\n\t});\n\tp.on(\'error\', function(error) {\n\t\tproceed(error);\n\t});\n\n### SAX\n\nltx implements multiple SAX backends:\n\n* *node-expat*: libexpat binding\n* *ltx*: fast native-JavaScript parser without error handling\n* *saxjs*: native-JavaScript parser\n\nIf present, they are available through\n`ltx.availableSaxParsers`. Mostly, you\'ll want to do:\n\n    parser = new ltx.bestSaxParser();\n\nRefer to `lib/parse.js` for the interface.\n\n\n## Element traversal\n\n* `is(name, xmlns?)`: check\n* `getName()`: name without ns prefix\n* `getNS()`: element\'s xmlns, respects prefixes and searches upwards\n* `findNS(prefix?)`: search for xmlns of a prefix upwards\n* `getChild(name, xmlns?)`: find first child\n* `getChildren(name, xmlns?)`: find all children\n* `getChildByAttr(attr, value, xmlns?, recursive?)`: find first child by a specific attribute\n* `getChildrenByAttr(attr, value, xmlns?, recursive?)`: find all children by a specific attribute\n* `getText()`: appends all text nodes recursively\n* `getChildText(name)`: a child\'s text contents\n* `root()`: uppermost parent in the tree\n* `up()`: parent or self\n\n\n## Element attributes\n\n* `attrs` is an object of the Element\'s attributes\n* `name` contains optional prefix, colon, name\n* `parent` points to its parent, this should always be consistent with\n  children\n* `children` is an Array of Strings and Elements\n\n## Modifying XML Elements\n\n* `new Element(name, attrs?)`: constructor\n* `remove(child)`: remove child by reference\n* `remove(name, xmlns)`: remove child by tag name and xmlns\n* `attr(attrName, value?)`: modify or get an attribute\'s value\n* `text(value?)`: modify or get the inner text\n* `clone()`: clones an element that is detached from the document\n\n## Building XML Elements\n\n    el = new ltx.Element(\'root\').\n\t\tc(\'children\');\n\tel.c(\'child\', { age: 5 }).t(\'Hello\').up()\n\t  .c(\'child\', { age: 7 }).t(\'Hello\').up()\n\t  .c(\'child\', { age: 99 }).t(\'Hello\').up()\n\tconsole.log("Serialized document:", el.root().toString());\n\nThis resembles Strophejs a bit.\n\nstrophejs\' XML Builder is very convenient for producing XMPP\nstanzas. node-xmpp includes it in a much more primitive way: the\n`c()`, `cnode()` and `t()` methods can be called on any *Element*\nobject, returning the child element.\n\nThis can be confusing: in the end, you will hold the last-added child\nuntil you use `up()`, a getter for the parent. `Connection.send()`\nfirst invokes `tree()` to retrieve the uppermost parent, the XMPP\nstanza, before sending it out the wire.\n\n\n## Destructive manipulation\n\nPlease always make sure `parent` and `children` are consistent. Don\'t\nappend children of other parents to your own element. We\'re not\nadoption-safe!\n\n\n## TODO\n\n* More documentation\n* More tests (Using [Vows](http://vowsjs.org/))\n\n',
-191 silly resolved     _id: 'ltx@0.2.1',
-191 silly resolved     _from: 'ltx@>= 0.1.1' },
-191 silly resolved   { name: 'node-expat',
-191 silly resolved     version: '1.6.0',
-191 silly resolved     main: './lib/node-expat',
-191 silly resolved     description: 'NodeJS binding for fast XML parsing.',
-191 silly resolved     keywords: [ 'xml', 'sax', 'expat', 'libexpat', 'parse', 'parsing' ],
-191 silly resolved     scripts:
-191 silly resolved      { install: 'node-waf configure build',
-191 silly resolved        update: 'node-waf build',
-191 silly resolved        test: 'vows --spec ./test.js' },
-191 silly resolved     dependencies: {},
-191 silly resolved     devDependencies: { vows: '>=0.5.12' },
-191 silly resolved     repository: { type: 'git', path: 'git://github.com/astro/node-expat.git' },
-191 silly resolved     homepage: 'http://github.com/astro/node-expat',
-191 silly resolved     bugs: 'http://github.com/astro/node-expat/issues',
-191 silly resolved     author:
-191 silly resolved      { name: 'Astro',
-191 silly resolved        email: 'astro@spaceboyz.net',
-191 silly resolved        url: 'http://spaceboyz.net/~astro/' },
-191 silly resolved     contributors:
-191 silly resolved      [ [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object],
-191 silly resolved        [Object] ],
-191 silly resolved     licenses: [ [Object] ],
-191 silly resolved     engines: { node: '>=0.4' },
-191 silly resolved     readme: '# node-expat #\n\n## Motivation ##\n\nYou use [node.js](http://github.com/ry/node) for speed? You process\nXML streams? Then you want the fastest XML parser: [libexpat](http://expat.sourceforge.net/)!\n\n## Speed ##\n\nA stupid speed test is supplied in `bench.js`. We measure how many\n25-byte elements a SAX parser can process:\n\n- [node-xml](http://github.com/robrighter/node-xml) (pure JavaScript): 23,000 el/s\n- [libxmljs](http://github.com/polotek/libxmljs) (libxml2 binding): 77,000 el/s\n- [node-expat](http://github.com/astro/node-expat) (libexpat binding, this): 113,000 el/s\n\nThese numbers were recorded on a Core 2 2400 MHz and may turn out to\nbe bullshit, given my few node.js experience.\n\n## Instructions ##\n\n    node-waf configure\n    node-waf build\n\nFor using the library, make sure `build/default/expat.node` is in\neither `$NODE_PATH` or `require.paths`.\n\nImportant events emitted by a parser:\n\n- *startElement* with `name, attrs`\n- *endElement* with `name`\n- *text* with `string`\n\nThere are more. Use `test.js` for reference.\n\nIt\'s possible to stop and resume the parser from within element handlers using the parsers \nstop() and resume() methods.\n\n## Error handling ##\n\nWe don\'t emit an error event because libexpat doesn\'t use a callback\neither. Instead, check that `parse()` returns `true`. A descriptive\nstring can be obtained via `getError()` to provide user feedback.\n\n## Namespace handling ##\n\nA word about special parsing of *xmlns:* this is not neccessary in a\nbare SAX parser like this, given that the DOM replacement you are\nusing (if any) is not relevant to the parser.\n',
-191 silly resolved     _id: 'node-expat@1.6.0',
-191 silly resolved     _from: 'node-expat@>=1.4.1' } ]
-192 info install ltx@0.2.1 into /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp
-193 info install node-expat@1.6.0 into /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp
-194 info installOne ltx@0.2.1
-195 info installOne node-expat@1.6.0
-196 verbose from cache /Users/pawong/.npm/ltx/0.2.1/package/package.json
-197 verbose from cache /Users/pawong/.npm/node-expat/1.6.0/package/package.json
-198 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx unbuild
-199 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/package.json
-200 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat unbuild
-201 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat/package.json
-202 verbose tar unpack /Users/pawong/.npm/ltx/0.2.1/package.tgz
-203 verbose tar unpack /Users/pawong/.npm/node-expat/1.6.0/package.tgz
-204 silly lockFile 97d1a618-dules-node-xmpp-node-modules-ltx /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx
-205 verbose lock /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx /Users/pawong/.npm/97d1a618-dules-node-xmpp-node-modules-ltx.lock
-206 silly lockFile 805dccb7-ode-xmpp-node-modules-node-expat /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat
-207 verbose lock /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat /Users/pawong/.npm/805dccb7-ode-xmpp-node-modules-node-expat.lock
-208 silly gunzTarPerm modes [ '755', '644' ]
-209 silly gunzTarPerm modes [ '755', '644' ]
-210 silly gunzTarPerm extractEntry package.json
-211 silly gunzTarPerm extractEntry LICENSE
-212 silly gunzTarPerm extractEntry index.js
-213 silly gunzTarPerm extractEntry package.json
-214 silly gunzTarPerm extractEntry .travis.yml
-215 silly gunzTarPerm extractEntry benchmark/.npmignore
-216 silly gunzTarPerm extractEntry .npmignore
-217 silly gunzTarPerm extractEntry LICENSE
-218 silly gunzTarPerm extractEntry benchmark/benchmark.js
-219 silly gunzTarPerm extractEntry bench.js
-220 silly gunzTarPerm extractEntry test.js
-221 silly gunzTarPerm extractEntry benchmark/build.js
-222 silly gunzTarPerm extractEntry benchmark/index.html
-223 silly gunzTarPerm extractEntry lib/node-expat.js
-224 silly gunzTarPerm extractEntry node-expat.cc
-225 silly gunzTarPerm extractEntry lib/element.js
-226 silly gunzTarPerm extractEntry lib/index-browserify.js
-227 silly gunzTarPerm extractEntry .travis.yml
-228 silly gunzTarPerm extractEntry lib/index.js
-229 silly gunzTarPerm extractEntry lib/parse.js
-230 silly gunzTarPerm extractEntry README.markdown
-231 silly gunzTarPerm extractEntry test-mystic-library.xml
-232 silly gunzTarPerm extractEntry lib/sax_easysax.js
-233 silly gunzTarPerm extractEntry lib/sax_expat.js
-234 silly gunzTarPerm extractEntry lib/sax_ltx.js
-235 silly gunzTarPerm extractEntry lib/sax_node-xml.js
-236 silly gunzTarPerm extractEntry lib/sax_saxjs.js
-237 silly gunzTarPerm extractEntry README.markdown
-238 silly gunzTarPerm extractEntry test/element-test.js
-239 silly gunzTarPerm extractEntry test/parse-test.js
-240 silly gunzTarPerm extractEntry tools/module.gyp
-241 silly gunzTarPerm extractEntry tools/node-gyp
-242 silly gunzTarPerm extractEntry tools/node-gyp.bat
-243 silly gunzTarPerm extractEntry tools/Readme.txt
-244 silly gunzTarPerm extractEntry wscript
-245 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/package.json
-246 silly lockFile 97d1a618-dules-node-xmpp-node-modules-ltx /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx
-247 info preinstall ltx@0.2.1
-248 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/package.json
-249 verbose readDependencies using package.json deps
-250 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/package.json
-251 verbose readDependencies using package.json deps
-252 verbose cache add [ 'sax@>=0.3.5', null ]
-253 silly cache add name=undefined spec="sax@>=0.3.5" args=["sax@>=0.3.5",null]
-254 verbose parsed url { pathname: 'sax@%3E=0.3.5',
-254 verbose parsed url   path: 'sax@%3E=0.3.5',
-254 verbose parsed url   href: 'sax@%3E=0.3.5' }
-255 silly cache add name="sax" spec=">=0.3.5" args=["sax",">=0.3.5"]
-256 verbose parsed url { pathname: '%3E=0.3.5', path: '%3E=0.3.5', href: '%3E=0.3.5' }
-257 verbose addNamed [ 'sax', '>=0.3.5' ]
-258 verbose addNamed [ null, '>=0.3.5' ]
-259 silly lockFile 6f77596c-sax-0-3-5 sax@>=0.3.5
-260 verbose lock sax@>=0.3.5 /Users/pawong/.npm/6f77596c-sax-0-3-5.lock
-261 silly addNameRange { name: 'sax', range: '>=0.3.5', hasData: false }
-262 verbose url raw sax
-263 verbose url resolving [ 'https://registry.npmjs.org/', './sax' ]
-264 verbose url resolved https://registry.npmjs.org/sax
-265 info retry registry request attempt 1 at 11:51:57
-266 verbose etag "2NAIQTIC3LL2DIYYWUCZ20J9K"
-267 http GET https://registry.npmjs.org/sax
-268 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat/package.json
-269 silly lockFile 805dccb7-ode-xmpp-node-modules-node-expat /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat
-270 info preinstall node-expat@1.6.0
-271 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat/package.json
-272 verbose readDependencies using package.json deps
-273 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat/package.json
-274 verbose readDependencies using package.json deps
-275 silly resolved []
-276 verbose about to build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat
-277 info build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat
-278 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat/package.json
-279 verbose linkStuff [ false,
-279 verbose linkStuff   false,
-279 verbose linkStuff   false,
-279 verbose linkStuff   '/Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules' ]
-280 info linkStuff node-expat@1.6.0
-281 verbose linkBins node-expat@1.6.0
-282 verbose linkMans node-expat@1.6.0
-283 verbose rebuildBundles node-expat@1.6.0
-284 info install node-expat@1.6.0
-285 verbose unsafe-perm in lifecycle true
-286 silly exec sh "-c" "node-waf configure build"
-287 silly sh,-c,node-waf configure build,/Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat spawning
-288 http 304 https://registry.npmjs.org/sax
-289 silly registry.get cb [ 304,
-289 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-289 silly registry.get     etag: '"2NAIQTIC3LL2DIYYWUCZ20J9K"',
-289 silly registry.get     date: 'Tue, 07 Aug 2012 18:51:57 GMT',
-289 silly registry.get     'content-length': '0' } ]
-290 verbose etag sax from cache
-291 silly addNameRange number 2 { name: 'sax', range: '>=0.3.5', hasData: true }
-292 silly addNameRange versions [ 'sax',
-292 silly addNameRange   [ '0.1.0',
-292 silly addNameRange     '0.1.1',
-292 silly addNameRange     '0.1.2',
-292 silly addNameRange     '0.1.3',
-292 silly addNameRange     '0.1.4',
-292 silly addNameRange     '0.1.5',
-292 silly addNameRange     '0.2.0',
-292 silly addNameRange     '0.2.1',
-292 silly addNameRange     '0.2.2',
-292 silly addNameRange     '0.2.3',
-292 silly addNameRange     '0.2.4',
-292 silly addNameRange     '0.2.5',
-292 silly addNameRange     '0.3.0',
-292 silly addNameRange     '0.3.1',
-292 silly addNameRange     '0.3.2',
-292 silly addNameRange     '0.3.3',
-292 silly addNameRange     '0.3.4',
-292 silly addNameRange     '0.3.5',
-292 silly addNameRange     '0.4.1',
-292 silly addNameRange     '0.4.0',
-292 silly addNameRange     '0.4.2' ] ]
-293 verbose addNamed [ 'sax', '0.4.2' ]
-294 verbose addNamed [ '0.4.2', '0.4.2' ]
-295 silly lockFile c98100aa-sax-0-4-2 sax@0.4.2
-296 verbose lock sax@0.4.2 /Users/pawong/.npm/c98100aa-sax-0-4-2.lock
-297 verbose read json /Users/pawong/.npm/sax/0.4.2/package/package.json
-298 silly lockFile c98100aa-sax-0-4-2 sax@0.4.2
-299 silly lockFile 6f77596c-sax-0-3-5 sax@>=0.3.5
-300 silly resolved [ { name: 'sax',
-300 silly resolved     description: 'An evented streaming XML parser in JavaScript',
-300 silly resolved     author:
-300 silly resolved      { name: 'Isaac Z. Schlueter',
-300 silly resolved        email: 'i@izs.me',
-300 silly resolved        url: 'http://blog.izs.me/' },
-300 silly resolved     version: '0.4.2',
-300 silly resolved     main: 'lib/sax.js',
-300 silly resolved     license:
-300 silly resolved      { type: 'MIT',
-300 silly resolved        url: 'https://raw.github.com/isaacs/sax-js/master/LICENSE' },
-300 silly resolved     scripts: { test: 'node test/index.js' },
-300 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/sax-js.git' },
-300 silly resolved     readme: '# sax js\n\nA sax-style parser for XML and HTML.\n\nDesigned with [node](http://nodejs.org/) in mind, but should work fine in\nthe browser or other CommonJS implementations.\n\n## What This Is\n\n* A very simple tool to parse through an XML string.\n* A stepping stone to a streaming HTML parser.\n* A handy way to deal with RSS and other mostly-ok-but-kinda-broken XML \n  docs.\n\n## What This Is (probably) Not\n\n* An HTML Parser - That\'s a fine goal, but this isn\'t it.  It\'s just\n  XML.\n* A DOM Builder - You can use it to build an object model out of XML,\n  but it doesn\'t do that out of the box.\n* XSLT - No DOM = no querying.\n* 100% Compliant with (some other SAX implementation) - Most SAX\n  implementations are in Java and do a lot more than this does.\n* An XML Validator - It does a little validation when in strict mode, but\n  not much.\n* A Schema-Aware XSD Thing - Schemas are an exercise in fetishistic \n  masochism.\n* A DTD-aware Thing - Fetching DTDs is a much bigger job.\n\n## Regarding `<!DOCTYPE`s and `<!ENTITY`s\n\nThe parser will handle the basic XML entities in text nodes and attribute\nvalues: `&amp; &lt; &gt; &apos; &quot;`. It\'s possible to define additional\nentities in XML by putting them in the DTD. This parser doesn\'t do anything\nwith that. If you want to listen to the `ondoctype` event, and then fetch\nthe doctypes, and read the entities and add them to `parser.ENTITIES`, then\nbe my guest.\n\nUnknown entities will fail in strict mode, and in loose mode, will pass\nthrough unmolested.\n\n## Usage\n\n    var sax = require("./lib/sax"),\n      strict = true, // set to false for html-mode\n      parser = sax.parser(strict);\n\n    parser.onerror = function (e) {\n      // an error happened.\n    };\n    parser.ontext = function (t) {\n      // got some text.  t is the string of text.\n    };\n    parser.onopentag = function (node) {\n      // opened a tag.  node has "name" and "attributes"\n    };\n    parser.onattribute = function (attr) {\n      // an attribute.  attr has "name" and "value"\n    };\n    parser.onend = function () {\n      // parser stream is done, and ready to have more stuff written to it.\n    };\n\n    parser.write(\'<xml>Hello, <who name="world">world</who>!</xml>\').close();\n\n    // stream usage\n    // takes the same options as the parser\n    var saxStream = require("sax").createStream(strict, options)\n    saxStream.on("error", function (e) {\n      // unhandled errors will throw, since this is a proper node\n      // event emitter.\n      console.error("error!", e)\n      // clear the error\n      this._parser.error = null\n      this._parser.resume()\n    })\n    saxStream.on("opentag", function (node) {\n      // same object as above\n    })\n    // pipe is supported, and it\'s readable/writable\n    // same chunks coming in also go out.\n    fs.createReadStream("file.xml")\n      .pipe(saxStream)\n      .pipe(fs.createReadStream("file-copy.xml"))\n\n\n\n## Arguments\n\nPass the following arguments to the parser function.  All are optional.\n\n`strict` - Boolean. Whether or not to be a jerk. Default: `false`.\n\n`opt` - Object bag of settings regarding string formatting.  All default to `false`.\n\nSettings supported:\n\n* `trim` - Boolean. Whether or not to trim text and comment nodes.\n* `normalize` - Boolean. If true, then turn any whitespace into a single\n  space.\n* `lowercase` - Boolean. If true, then lowercase tag names and attribute names\n  in loose mode, rather than uppercasing them.\n* `xmlns` - Boolean. If true, then namespaces are supported.\n* `position` - Boolean. If false, then don\'t track line/col/position.\n\n## Methods\n\n`write` - Write bytes onto the stream. You don\'t have to do this all at\nonce. You can keep writing as much as you want.\n\n`close` - Close the stream. Once closed, no more data may be written until\nit is done processing the buffer, which is signaled by the `end` event.\n\n`resume` - To gracefully handle errors, assign a listener to the `error`\nevent. Then, when the error is taken care of, you can call `resume` to\ncontinue parsing. Otherwise, the parser will not continue while in an error\nstate.\n\n## Members\n\nAt all times, the parser object will have the following members:\n\n`line`, `column`, `position` - Indications of the position in the XML\ndocument where the parser currently is looking.\n\n`startTagPosition` - Indicates the position where the current tag starts.\n\n`closed` - Boolean indicating whether or not the parser can be written to.\nIf it\'s `true`, then wait for the `ready` event to write again.\n\n`strict` - Boolean indicating whether or not the parser is a jerk.\n\n`opt` - Any options passed into the constructor.\n\n`tag` - The current tag being dealt with.\n\nAnd a bunch of other stuff that you probably shouldn\'t touch.\n\n## Events\n\nAll events emit with a single argument. To listen to an event, assign a\nfunction to `on<eventname>`. Functions get executed in the this-context of\nthe parser object. The list of supported events are also in the exported\n`EVENTS` array.\n\nWhen using the stream interface, assign handlers using the EventEmitter\n`on` function in the normal fashion.\n\n`error` - Indication that something bad happened. The error will be hanging\nout on `parser.error`, and must be deleted before parsing can continue. By\nlistening to this event, you can keep an eye on that kind of stuff. Note:\nthis happens *much* more in strict mode. Argument: instance of `Error`.\n\n`text` - Text node. Argument: string of text.\n\n`doctype` - The `<!DOCTYPE` declaration. Argument: doctype string.\n\n`processinginstruction` - Stuff like `<?xml foo="blerg" ?>`. Argument:\nobject with `name` and `body` members. Attributes are not parsed, as\nprocessing instructions have implementation dependent semantics.\n\n`sgmldeclaration` - Random SGML declarations. Stuff like `<!ENTITY p>`\nwould trigger this kind of event. This is a weird thing to support, so it\nmight go away at some point. SAX isn\'t intended to be used to parse SGML,\nafter all.\n\n`opentag` - An opening tag. Argument: object with `name` and `attributes`.\nIn non-strict mode, tag names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, then it will contain\nnamespace binding information on the `ns` member, and will have a\n`local`, `prefix`, and `uri` member.\n\n`closetag` - A closing tag. In loose mode, tags are auto-closed if their\nparent closes. In strict mode, well-formedness is enforced. Note that\nself-closing tags will have `closeTag` emitted immediately after `openTag`.\nArgument: tag name.\n\n`attribute` - An attribute node.  Argument: object with `name` and `value`.\nIn non-strict mode, attribute names are uppercased, unless the `lowercase`\noption is set.  If the `xmlns` option is set, it will also contains namespace\ninformation.\n\n`comment` - A comment node.  Argument: the string of the comment.\n\n`opencdata` - The opening tag of a `<![CDATA[` block.\n\n`cdata` - The text of a `<![CDATA[` block. Since `<![CDATA[` blocks can get\nquite large, this event may fire multiple times for a single block, if it\nis broken up into multiple `write()`s. Argument: the string of random\ncharacter data.\n\n`closecdata` - The closing tag (`]]>`) of a `<![CDATA[` block.\n\n`opennamespace` - If the `xmlns` option is set, then this event will\nsignal the start of a new namespace binding.\n\n`closenamespace` - If the `xmlns` option is set, then this event will\nsignal the end of a namespace binding.\n\n`end` - Indication that the closed stream has ended.\n\n`ready` - Indication that the stream has reset, and is ready to be written\nto.\n\n`noscript` - In non-strict mode, `<script>` tags trigger a `"script"`\nevent, and their contents are not checked for special xml characters.\nIf you pass `noscript: true`, then this behavior is suppressed.\n\n## Reporting Problems\n\nIt\'s best to write a failing test if you find an issue.  I will always\naccept pull requests with failing tests if they demonstrate intended\nbehavior, but it is very hard to figure out what issue you\'re describing\nwithout a test.  Writing a test is also the best way for you yourself\nto figure out if you really understand the issue you think you have with\nsax-js.\n',
-300 silly resolved     contributors:
-300 silly resolved      [ [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object],
-300 silly resolved        [Object] ],
-300 silly resolved     _id: 'sax@0.4.2',
-300 silly resolved     _from: 'sax@>=0.3.5' } ]
-301 info install sax@0.4.2 into /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx
-302 info installOne sax@0.4.2
-303 verbose from cache /Users/pawong/.npm/sax/0.4.2/package/package.json
-304 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax unbuild
-305 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
-306 verbose tar unpack /Users/pawong/.npm/sax/0.4.2/package.tgz
-307 silly lockFile 8ed82e44-ode-modules-ltx-node-modules-sax /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax
-308 verbose lock /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax /Users/pawong/.npm/8ed82e44-ode-modules-ltx-node-modules-sax.lock
-309 silly gunzTarPerm modes [ '755', '644' ]
-310 silly gunzTarPerm extractEntry package.json
-311 silly gunzTarPerm extractEntry README.md
-312 silly gunzTarPerm extractEntry LICENSE
-313 silly gunzTarPerm extractEntry AUTHORS
-314 silly gunzTarPerm extractEntry examples/pretty-print.js
-315 silly gunzTarPerm extractEntry examples/get-products.js
-316 silly gunzTarPerm extractEntry examples/hello-world.js
-317 silly gunzTarPerm extractEntry examples/example.js
-318 silly gunzTarPerm extractEntry examples/switch-bench.js
-319 silly gunzTarPerm extractEntry examples/big-not-pretty.xml
-320 silly gunzTarPerm extractEntry examples/shopping.xml
-321 silly gunzTarPerm extractEntry examples/strict.dtd
-322 silly gunzTarPerm extractEntry examples/not-pretty.xml
-323 silly gunzTarPerm extractEntry examples/test.html
-324 silly gunzTarPerm extractEntry examples/test.xml
-325 silly gunzTarPerm extractEntry lib/sax.js
-326 silly gunzTarPerm extractEntry test/buffer-overrun.js
-327 silly gunzTarPerm extractEntry test/issue-47.js
-328 silly gunzTarPerm extractEntry test/issue-49.js
-329 silly gunzTarPerm extractEntry test/parser-position.js
-330 silly gunzTarPerm extractEntry test/issue-35.js
-331 silly gunzTarPerm extractEntry test/self-closing-child-strict.js
-332 silly gunzTarPerm extractEntry test/self-closing-child.js
-333 silly gunzTarPerm extractEntry test/self-closing-tag.js
-334 silly gunzTarPerm extractEntry test/stray-ending.js
-335 silly gunzTarPerm extractEntry test/trailing-non-whitespace.js
-336 silly gunzTarPerm extractEntry test/issue-30.js
-337 silly gunzTarPerm extractEntry test/unquoted.js
-338 silly gunzTarPerm extractEntry test/issue-23.js
-339 silly gunzTarPerm extractEntry test/xmlns-issue-41.js
-340 silly gunzTarPerm extractEntry test/index.js
-341 silly gunzTarPerm extractEntry test/xmlns-rebinding.js
-342 silly gunzTarPerm extractEntry test/cdata.js
-343 silly gunzTarPerm extractEntry test/xmlns-strict.js
-344 silly gunzTarPerm extractEntry test/cdata-multiple.js
-345 silly gunzTarPerm extractEntry test/xmlns-unbound.js
-346 silly gunzTarPerm extractEntry test/cdata-fake-end.js
-347 silly gunzTarPerm extractEntry test/xmlns-xml-default-ns.js
-348 silly gunzTarPerm extractEntry test/cdata-end-split.js
-349 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix-attribute.js
-350 silly gunzTarPerm extractEntry test/cdata-chunked.js
-351 silly gunzTarPerm extractEntry test/xmlns-xml-default-prefix.js
-352 silly gunzTarPerm extractEntry test/case.js
-353 silly gunzTarPerm extractEntry test/xmlns-xml-default-redefine.js
-354 silly gunzTarPerm extractEntry test/script.js
-355 verbose read json /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
-356 silly lockFile 8ed82e44-ode-modules-ltx-node-modules-sax /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax
-357 info preinstall sax@0.4.2
-358 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
-359 verbose readDependencies using package.json deps
-360 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
-361 verbose readDependencies using package.json deps
-362 silly resolved []
-363 verbose about to build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax
-364 info build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax
-365 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules/sax/package.json
-366 verbose linkStuff [ false,
-366 verbose linkStuff   false,
-366 verbose linkStuff   false,
-366 verbose linkStuff   '/Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/node_modules' ]
-367 info linkStuff sax@0.4.2
-368 verbose linkBins sax@0.4.2
-369 verbose linkMans sax@0.4.2
-370 verbose rebuildBundles sax@0.4.2
-371 info install sax@0.4.2
-372 info postinstall sax@0.4.2
-373 verbose about to build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx
-374 info build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx
-375 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/ltx/package.json
-376 verbose linkStuff [ false,
-376 verbose linkStuff   false,
-376 verbose linkStuff   false,
-376 verbose linkStuff   '/Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules' ]
-377 info linkStuff ltx@0.2.1
-378 verbose linkBins ltx@0.2.1
-379 verbose linkMans ltx@0.2.1
-380 verbose rebuildBundles ltx@0.2.1
-381 verbose rebuildBundles [ 'sax' ]
-382 info install ltx@0.2.1
-383 info postinstall ltx@0.2.1
-384 info node-expat@1.6.0 Failed to exec install script
-385 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat unbuild
-386 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules/node-expat/package.json
-387 info preuninstall node-expat@1.6.0
-388 info uninstall node-expat@1.6.0
-389 verbose false,/Users/pawong/Downloads/hubot/node_modules,/Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/node_modules unbuild node-expat@1.6.0
-390 info postuninstall node-expat@1.6.0
-391 verbose about to build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp
-392 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp unbuild
-393 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules/node-xmpp/package.json
-394 info preuninstall node-xmpp@0.3.2
-395 info uninstall node-xmpp@0.3.2
-396 verbose false,/Users/pawong/Downloads/hubot/node_modules,/Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/node_modules unbuild node-xmpp@0.3.2
-397 info postuninstall node-xmpp@0.3.2
-398 verbose about to build /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp
-399 info /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp unbuild
-400 verbose from cache /Users/pawong/Downloads/hubot/node_modules/hubot-xmpp/package.json
-401 info preuninstall hubot-xmpp@0.1.0
-402 info uninstall hubot-xmpp@0.1.0
-403 verbose true,/Users/pawong/Downloads/hubot/node_modules,/Users/pawong/Downloads/hubot/node_modules unbuild hubot-xmpp@0.1.0
-404 info postuninstall hubot-xmpp@0.1.0
-405 error node-expat@1.6.0 install: `node-waf configure build`
-405 error `sh "-c" "node-waf configure build"` failed with 1
-406 error Failed at the node-expat@1.6.0 install script.
-406 error This is most likely a problem with the node-expat package,
-406 error not with npm itself.
-406 error Tell the author that this fails on your system:
-406 error     node-waf configure build
-406 error You can get their info via:
-406 error     npm owner ls node-expat
-406 error There is likely additional logging output above.
-407 error System Darwin 11.4.2
-408 error command "node" "/usr/local/bin/npm" "install"
-409 error cwd /Users/pawong/Downloads/hubot
-410 error node -v v0.8.5
-411 error npm -v 1.1.46
-412 error code ELIFECYCLE
-413 verbose exit [ 1, true ]
+56 silly gunzTarPerm extractEntry README.markdown
+57 silly gunzTarPerm extractEntry install.sh
+58 verbose read json /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package/package.json
+59 silly lockFile f768bdaf-3340-0-09306448535062373-package /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package
+60 verbose from cache /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package/package.json
+61 verbose tar pack [ '/Users/pawong/.npm/node-stringprep/0.1.4/package.tgz',
+61 verbose tar pack   '/var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package' ]
+62 verbose tarball /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+63 verbose folder /var/folders/nx/wd8vhjnn48x3sznbcfq4zqyrqqjn3f/T/npm-2935/1344365633340-0.09306448535062373/package
+64 silly lockFile 3d0feefa-ode-stringprep-0-1-4-package-tgz /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+65 verbose lock /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz /Users/pawong/.npm/3d0feefa-ode-stringprep-0-1-4-package-tgz.lock
+66 silly lockFile 3d0feefa-ode-stringprep-0-1-4-package-tgz /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+67 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
+68 verbose lock /Users/pawong/.npm/node-stringprep/0.1.4/package /Users/pawong/.npm/78bd3f6e-pm-node-stringprep-0-1-4-package.lock
+69 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
+70 verbose tar unpack /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+71 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
+72 verbose lock /Users/pawong/.npm/node-stringprep/0.1.4/package /Users/pawong/.npm/78bd3f6e-pm-node-stringprep-0-1-4-package.lock
+73 silly gunzTarPerm modes [ '755', '644' ]
+74 silly gunzTarPerm extractEntry package.json
+75 silly gunzTarPerm extractEntry .npmignore
+76 silly gunzTarPerm extractEntry LICENSE
+77 silly gunzTarPerm extractEntry leakcheck.js
+78 silly gunzTarPerm extractEntry install.sh
+79 silly gunzTarPerm extractEntry node-stringprep.cc
+80 silly gunzTarPerm extractEntry README.markdown
+81 silly gunzTarPerm extractEntry wscript
+82 verbose read json /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
+83 silly lockFile 78bd3f6e-pm-node-stringprep-0-1-4-package /Users/pawong/.npm/node-stringprep/0.1.4/package
+84 silly shasum updated bytes 4931
+85 info shasum 86a1ac27fd26a893d38e637e1cffb4e0bdbe1e4a
+85 info shasum /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+86 verbose from cache /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
+87 verbose chmod /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz 644
+88 verbose chown /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz [ 796447854, 1542158550 ]
+89 silly lockFile 8265f17e-ngprep-node-stringprep-0-1-4-tgz https://registry.npmjs.org/node-stringprep/-/node-stringprep-0.1.4.tgz
+90 silly lockFile e5510cac-node-stringprep-0-1-4 node-stringprep@0.1.4
+91 silly lockFile c469c25e-node-stringprep node-stringprep@
+92 silly resolved [ { name: 'node-stringprep',
+92 silly resolved     version: '0.1.4',
+92 silly resolved     main: './build/default/node-stringprep',
+92 silly resolved     description: 'ICU StringPrep profiles',
+92 silly resolved     keywords: [ 'unicode', 'stringprep', 'icu' ],
+92 silly resolved     scripts: { install: 'sh ./install.sh' },
+92 silly resolved     dependencies: {},
+92 silly resolved     devDependencies: {},
+92 silly resolved     repository:
+92 silly resolved      { type: 'git',
+92 silly resolved        path: 'git://github.com/astro/node-stringprep.git' },
+92 silly resolved     homepage: 'http://github.com/astro/node-stringprep',
+92 silly resolved     bugs: 'http://github.com/astro/node-stringprep/issues',
+92 silly resolved     author:
+92 silly resolved      { name: 'Astro',
+92 silly resolved        email: 'astro@spaceboyz.net',
+92 silly resolved        url: 'http://spaceboyz.net/~astro/' },
+92 silly resolved     licenses: [ [Object] ],
+92 silly resolved     engines: { node: '>=0.4' },
+92 silly resolved     readme: '# node-stringprep #\n\n[Flattr this!](https://flattr.com/thing/44598/node-stringprep)\n\n## Purpose ##\n\nExposes predefined Unicode normalization functions that are required by many protocols. This is just a binding to [ICU](http://icu-project.org/), which is [said to be fast.](http://ayena.de/node/74)\n\n## Installation ##\n\n    # Debian\n    apt-get install libicu-dev\n\n    # Gentoo\n    emerge icu\n\n    # OSX using MacPorts\n    port install icu +devel\n\n    # OSX using Homebrew\n    brew install icu4c\n    ln -s /usr/local/Cellar/icu4c/<VERSION>/bin/icu-config /usr/local/bin/icu-config\n\n    npm install node-stringprep\n\n## Usage ##\n\n    var StringPrep = require(\'node-stringprep\').StringPrep;\n    var prep = new StringPrep(\'nameprep\');\n    prep.prepare(\'Äffchen\')  // => \'äffchen\'\n\nFor a list of supported profiles, see [node-stringprep.cc](http://github.com/astro/node-stringprep/blob/master/node-stringprep.cc#L160)\n',
+92 silly resolved     _id: 'node-stringprep@0.1.4',
+92 silly resolved     dist: { shasum: '86a1ac27fd26a893d38e637e1cffb4e0bdbe1e4a' },
+92 silly resolved     _from: 'node-stringprep' } ]
+93 info install node-stringprep@0.1.4 into /Users/pawong/Downloads/hubot
+94 info installOne node-stringprep@0.1.4
+95 verbose from cache /Users/pawong/.npm/node-stringprep/0.1.4/package/package.json
+96 info /Users/pawong/Downloads/hubot/node_modules/node-stringprep unbuild
+97 verbose read json /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+98 verbose tar unpack /Users/pawong/.npm/node-stringprep/0.1.4/package.tgz
+99 silly lockFile 562b79fc-bot-node-modules-node-stringprep /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+100 verbose lock /Users/pawong/Downloads/hubot/node_modules/node-stringprep /Users/pawong/.npm/562b79fc-bot-node-modules-node-stringprep.lock
+101 silly gunzTarPerm modes [ '755', '644' ]
+102 silly gunzTarPerm extractEntry package.json
+103 silly gunzTarPerm extractEntry .npmignore
+104 silly gunzTarPerm extractEntry LICENSE
+105 silly gunzTarPerm extractEntry leakcheck.js
+106 silly gunzTarPerm extractEntry install.sh
+107 silly gunzTarPerm extractEntry node-stringprep.cc
+108 silly gunzTarPerm extractEntry README.markdown
+109 silly gunzTarPerm extractEntry wscript
+110 verbose read json /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+111 silly lockFile 562b79fc-bot-node-modules-node-stringprep /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+112 info preinstall node-stringprep@0.1.4
+113 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+114 verbose readDependencies using package.json deps
+115 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+116 verbose readDependencies using package.json deps
+117 silly resolved []
+118 verbose about to build /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+119 info build /Users/pawong/Downloads/hubot/node_modules/node-stringprep
+120 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+121 verbose linkStuff [ false,
+121 verbose linkStuff   false,
+121 verbose linkStuff   false,
+121 verbose linkStuff   '/Users/pawong/Downloads/hubot/node_modules' ]
+122 info linkStuff node-stringprep@0.1.4
+123 verbose linkBins node-stringprep@0.1.4
+124 verbose linkMans node-stringprep@0.1.4
+125 verbose rebuildBundles node-stringprep@0.1.4
+126 info install node-stringprep@0.1.4
+127 verbose unsafe-perm in lifecycle true
+128 silly exec sh "-c" "sh ./install.sh"
+129 silly sh,-c,sh ./install.sh,/Users/pawong/Downloads/hubot/node_modules/node-stringprep spawning
+130 info node-stringprep@0.1.4 Failed to exec install script
+131 info /Users/pawong/Downloads/hubot/node_modules/node-stringprep unbuild
+132 verbose from cache /Users/pawong/Downloads/hubot/node_modules/node-stringprep/package.json
+133 info preuninstall node-stringprep@0.1.4
+134 info uninstall node-stringprep@0.1.4
+135 verbose true,/Users/pawong/Downloads/hubot/node_modules,/Users/pawong/Downloads/hubot/node_modules unbuild node-stringprep@0.1.4
+136 info postuninstall node-stringprep@0.1.4
+137 error node-stringprep@0.1.4 install: `sh ./install.sh`
+137 error `sh "-c" "sh ./install.sh"` failed with 1
+138 error Failed at the node-stringprep@0.1.4 install script.
+138 error This is most likely a problem with the node-stringprep package,
+138 error not with npm itself.
+138 error Tell the author that this fails on your system:
+138 error     sh ./install.sh
+138 error You can get their info via:
+138 error     npm owner ls node-stringprep
+138 error There is likely additional logging output above.
+139 error System Darwin 11.4.2
+140 error command "node" "/usr/local/bin/npm" "install" "node-stringprep"
+141 error cwd /Users/pawong/Downloads/hubot
+142 error node -v v0.8.5
+143 error npm -v 1.1.46
+144 error code ELIFECYCLE
+145 verbose exit [ 1, true ]
