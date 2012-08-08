@@ -1,12 +1,16 @@
 ## fabric.coffee
 #
-# Description: Hubot deploys for you!
+# Description:
+#   Runs your fabric scripts
+#
+# Configuration:
+#   HUBOT_FABRIC_BASE_DIR
 #
 # Commands:
-# deploy <> to <> as <user> pw <password>
-#
+#   hubot deploy <project> to <staging|production> as <jetty|cmsdeploy> with password <password>
+
 # Author:
-# jl23889
+# jl23889, paulsfds
 
 {spawn, exec}  = require 'child_process'
 BASE_DIR = "/Users/pawong/Documents/projects/ign/"
