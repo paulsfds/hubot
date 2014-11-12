@@ -16,7 +16,7 @@ module.exports = (robot) ->
 
 lotto = (msg) ->
     
-    msg.send "DON'T PANIC!!! Mikebot is AWESOME and (almost) never wrong!"
+    msg.send "DON'T PANIC!!! Hubot is AWESOME and (almost) never wrong!"
     msg.send "Here are today's National Lottery numbers!"
     msg.send getnums(49,6)
     msg.send "Here are today's EuroMillions numbers!"
@@ -39,5 +39,5 @@ checkarray = (item, array) ->
     for num in array
         if num is item
             return 0 
-        return 1
+    return 1
         
